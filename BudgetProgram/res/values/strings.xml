@@ -1,5 +1,16 @@
 <resources>
 
-    <string name="app_name">"Budget Program "</string>
+    <string name="app_name">Budget Program</string>
+    <string name="AccountType">Account Type</string>
+    <string name="AccountName">Account Name</string>
+    <string name="AddAccount">Add Account</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="FirstTimeSetup">First Time Setup</string>
+    <string name="Name">Your Name</string>
+    <string name="Pin">Pin</string>
+    <string name="Budget">Monthly Budget</string>
+    <string name="startBalance">Starting Balance</string>
 
 </resources>

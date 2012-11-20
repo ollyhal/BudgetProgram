@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSAccountName"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AccountName"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/etAccountName"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSAccountName"
+                        android:ems="10" />
+
+                    <TextView
+                        android:id="@+id/tvAccountType"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAccountName"
+                        android:text="@string/AccountType"
+                        android:textSize="20dp" />
+                    
+
+                    <Spinner 
+                        android:id="@+id/spAccountType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvAccountType"
+                        
+                       />
+
+                    <TextView
+                        android:id="@+id/tvSBalance"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spAccountType"
+                        android:text="@string/startBalance"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/etBalance"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSBalance"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/tvSBudget"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etBalance"
+                        android:text="@string/Budget"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/etBudget"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSBudget"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/tvSPin"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etBudget"
+                        android:text="@string/Pin"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/etPin"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSPin"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="numberDecimal" />
+
+                    <CheckBox
+                        android:id="@+id/cbPin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tvSPin"
+                        android:checked="false" >
+                    </CheckBox>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/etSearch"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Search here.." />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp" >
+
+                        <ListView
+                            android:id="@+id/lvBanks"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <Button
+        android:id="@+id/bAddAccount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AddAccount" />
+
+</LinearLayout>

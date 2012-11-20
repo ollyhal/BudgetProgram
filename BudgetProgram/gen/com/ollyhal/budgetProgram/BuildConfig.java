@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.budgetprogram;
+package com.ollyhal.budgetProgram;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;
